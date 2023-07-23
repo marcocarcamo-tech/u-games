@@ -1,0 +1,28 @@
+:host {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* nav-bar.component.scss */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-link {
+    cursor: pointer;
+  }
+  
+  .add-game-link {
+    margin-right: 20px;
+  }
+  
+  /* Estilo para el div que contiene "Salir" */
+  .navbar .ml-auto {
+    display: flex;
+    align-items: center;
+  }
+  

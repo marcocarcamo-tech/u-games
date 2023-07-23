@@ -1,0 +1,11 @@
+<div class="card">
+    <img [src]="game.image" alt="Game Image" class="card-image">
+    <div class="card-content">
+      <h3>{{ game.title }}</h3>
+      <p>{{ game.description }}</p>
+      <p>Fecha de lanzamiento: {{ game.releaseDate }}</p>
+      <p>Número de descargas: {{ game.downloads }}</p>
+      <p *ngIf="game.comingSoon">Próximamente</p>
+    </div>
+  </div>
+  

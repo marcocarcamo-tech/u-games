@@ -1,0 +1,23 @@
+<!-- nav-bar.component.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">U-Games</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/module-home/home/most-popular']">Más populares</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/module-home/home/most-downloaded']">Más descargados</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/module-home/home/coming-soon']">Próximamente</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link add-game-link" [routerLink]="['/module-home/home/add-game']">Agregar</a>
+      </li>
+    </ul>
+    <div class="ml-auto"> <!-- Agregar div para alinear "Salir" a la derecha -->
+      <a class="nav-link" (click)="logout()">Salir</a>
+    </div>
+  </div>
+</nav>
